@@ -1,7 +1,7 @@
 # Backend Project
 
 This is  a backend project made with node.js , express js , ejs (templates) and 
-ans several other dependencied as follows:
+several other dependencied as follows:
 
 #1 UUID - to generate univerally unique id for each user..
 #2 method-override - to convert post requests into  patch, put or delete request...
