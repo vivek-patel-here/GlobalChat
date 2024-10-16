@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(32, 125, 255);
+}
+.container{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: #ffffff31;
+    backdrop-filter: blur(10px);
+}
+.alert{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 30%;
+    border-radius: 25px;
+    padding: 3vh 3vw;
+    color: white;
+    width: 60%;
+    border: 1px solid white;
+    background-color: rgb(21, 117, 251);
+}
+.alert p {
+font-size: 1.1rem;
+font-weight: 400;
+}
+.btns{
+    height: 30%;
+    width: 30%;
+    margin-top:4vh ;
+    display: flex ;
+    align-items: center;
+    justify-content: space-around;
+}
+button{
+    height: 2rem;
+    width: 4rem;
+    border-radius: 20px;
+    border: 1px solid white;
+    color: white;
+}
+.cancel{
+    background-color: grey;
+}
+.Delete{
+    background-color: red;
+}

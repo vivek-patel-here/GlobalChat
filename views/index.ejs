@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobalChat - Posts</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <h1>GlobalChat - All Global Posts</h1>
+            <a href="/posts/new"><button> Add new post +</button></a>
+        </nav>
+        <% for (let post of posts){ %>
+            <div class="post">
+                <h2>@<%=post.username%></h2>
+                <div>
+                    <h3><%=post.content.slice(0,32) + "..."%></h3>   
+                    <form action="http://localhost:5000/posts/<%=post.id %>" method="get"><button type="submit">
+                        &rarr;
+                    </button></form>
+                </div>
+                <div class="btns">
+                    <a href="/posts/<%= post.id %>/Edit"><button class="btn">Edit Post</button></a>
+                    <a href="/posts/<%= post.id %>/del"><button class="btn">Delete Post</button></a>
+                </div>
+            </div>
+            <% } %>
+    </div>
+    
+</body>
+</html>

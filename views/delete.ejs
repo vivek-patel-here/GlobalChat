@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobalChat-@<%= post.username %>_deletePost</title>
+    <link rel="stylesheet" href="/style5.css">
+</head>
+<body>
+    <div class="container">
+        <div class="alert">
+            <p>Are You Sure to Delete the post? <br>
+                post id :<%= post.id %> <br>
+                Warning : Deleted Post Cannot be recoverd ...</p>
+                <div class="btns">
+                    <a href="/posts" ><button class="cancel">cancel</button></a>
+                    <form action="http://localhost:5000/posts/<%= post.id%>/del?_method=DELETE" method="post" >
+                        <button class="Delete"> Delete</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+nav{
+    height: 10vh;
+    width: 100%;
+    border-bottom: 2px solid white;
+    border-radius: 0PX 0px 10px 10px;
+    background-color: rgb(44, 163, 255);
+    padding: 3vh 0px;
+    text-align: center;
+    position: relative;
+}
+nav h1{
+    color: white;
+    width: 100%;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 2rem;
+
+}
+nav button{
+    position: absolute;
+    left: 90%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 5vh;
+    width: 10vw;
+    border-radius: 15px;
+    border: 2px solid white;
+    background-color: rgb(27, 137, 254);
+    color:white;
+    font-size: 1.1rem;
+    white-space: nowrap;
+}
+
+.post{
+    height: 30vh;
+    width: 30vw;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(44, 163, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+}
+.post h2{
+    font-weight: 400;
+    color:white ;
+}
+.post div:nth-of-type(1){
+    background-color: white;
+    width: 80%;
+    border-radius: 20px;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+button{
+    cursor: pointer;
+}
+.post h3{
+    width: 70%;
+    color: rgb(0, 149, 255);
+    font-weight: 400;
+    padding: 10px 10px;
+    font-size: 1rem;
+}
+.post div button[type]{
+    height:40px;
+    width: 40px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: rgb(0, 149, 255);
+    border: 1px solid rgb(0, 149, 255);
+}
+.btns{
+    height: 30%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+.btn{
+    height: 5vh;
+    width: 7vw;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color:rgb(27, 137, 254);
+    color: white;
+}
